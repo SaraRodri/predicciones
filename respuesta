@@ -1,0 +1,603 @@
+import preguntas
+
+r1 = preguntas.r1
+r2 = preguntas.r2
+r3 = preguntas.r3
+r4 = preguntas.r4
+
+if r1 == "a": #si la respuesta 1 es igual a "a"
+    if r2 == "a": #si la respuesta 2 es igual a "a"
+        if r3 == "a": #si la respuesta 3 es igual a "a"
+            if r4 == "a": #si la respuesta 3 es igual a "a"
+                print ("Usted va a votar por por ") #acá imprime el resultado que sale después de seguir hasta su finalidad el árbol de decisiones
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+        elif r3 == "b":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+        elif r3 == "c":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+        elif r3 == "d":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+    elif r2 == "b":
+        if r3 == "a":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+        elif r3 == "b":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+        elif r3 == "c":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+        elif r3 == "d":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+    elif r2 == "c":
+        if r3 == "a":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+        elif r3 == "b":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+        elif r3 == "c":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+        elif r3 == "d":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+    elif r2 == "d":
+        if r3 == "a":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+        elif r3 == "b":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+        elif r3 == "c":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+        elif r3 == "d":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+elif r1 == "b":
+    if r2 == "a":
+        if r3 == "a":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+        elif r3 == "b":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+        elif r3 == "c":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+        elif r3 == "d":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+    elif r2 == "b":
+        if r3 == "a":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+        elif r3 == "b":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+        elif r3 == "c":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+        elif r3 == "d":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+    elif r2 == "c":
+        if r3 == "a":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+        elif r3 == "b":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+        elif r3 == "c":
+            if r4 == "a":
+                print ("Usted va a votar por por")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+        elif r3 == "d":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+    elif r2 == "d":
+        if r3 == "a":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+        elif r3 == "b":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+        elif r3 == "c":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+        elif r3 == "d":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+elif r1 == "c":
+    if r2 == "a":
+        if r3 == "a":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar por por ")
+            elif r4 == "d":
+                print ("Usted va a votar por por ")
+        elif r3 == "b":
+            if r4 == "a":
+                print ("Usted va a votar por por ")
+            elif r4 == "b":
+                print ("Usted va a votar por por ")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+        elif r3 == "c":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+        elif r3 == "d":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+    elif r2 == "b":
+        if r3 == "a":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+        elif r3 == "b":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+        elif r3 == "c":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+        elif r3 == "d":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+    elif r2 == "c":
+        if r3 == "a":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+        elif r3 == "b":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+        elif r3 == "c":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+        elif r3 == "d":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+    elif r2 == "d":
+        if r3 == "a":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+        elif r3 == "b":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+        elif r3 == "c":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+        elif r3 == "d":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+elif r1 == "d":
+    if r2 == "a":
+        if r3 == "a":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+        elif r3 == "b":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+        elif r3 == "c":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+        elif r3 == "d":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+    elif r2 == "b":
+        if r3 == "a":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+        elif r3 == "b":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+        elif r3 == "c":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+        elif r3 == "d":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+    elif r2 == "c":
+        if r3 == "a":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+        elif r3 == "b":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+        elif r3 == "c":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+        elif r3 == "d":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+    elif r2 == "d":
+        if r3 == "a":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+        elif r3 == "b":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+        elif r3 == "c":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
+        elif r3 == "d":
+            if r4 == "a":
+                print ("Usted va a votar")
+            elif r4 == "b":
+                print ("Usted va a votar1")
+            elif r4 == "c":
+                print ("Usted va a votar2")
+            elif r4 == "d":
+                print ("Usted va a votar3")
