@@ -1,0 +1,52 @@
+respuestas = ["a", "b", "c", "d"] #esta variable se usa en las preguntas 2 y 3
+respuestas2 = ["a", "b", "c", "d", "e"] #esta variable se usa en la pregunta 4
+respuestas3 = ["a", "b", "c"] #esta variable se usa en la pregunta 1
+
+print("Gracias por ser parte de nuestra encuesta \nSe presentarán una serie de preguntas con diferentes opciones, por favor escriba en su teclado la opción que concuerda con su pensar",
+      "es decir, si cree que la opción correcta es la 'a', digite 'a'") #instrucciones de cómo funciona la encuesta
+encuestado = input("¿Cómo se llama? ") #nombre del encuestado
+
+r1 = ""
+r2 = "" 
+r3 = ""
+r4 = ""
+
+while r1 not in respuestas3:    #el while sirve para que si se digita algo que no esté dentro de las opciones, aparezca el mensaje 
+# "Escoja una opción válida" y la pregunta se repita hasta que se de una opción válida
+    print("¿Usted va a votar en estas elecciones?"
+           "\n a) Sí \n b) No \n c) No lo sé aun")
+    r1 = input()
+    if r1 in respuestas3: #cuando es una opción válida, se sale del while
+        break
+    else:
+        print ("Escoja una opción válida")
+
+while r2 not in respuestas:    
+    print("Su candidato preferido debe enfocarse en"
+           "\n a) El medio ambiente \n b) La seguridad \n c) La reactivación económica \n d) La eliminación de la corrupción")
+    r2 = input()
+    if r2 in respuestas:
+        break
+    else:
+        print ("Escoja una opción válida")
+        
+while r3 not in respuestas:
+    print("Este candidato debe generar" 
+          "\n a) Confianza \n b) Unión \n c) Cohesión \n d) Estabilidad económica ")
+    r3 = input()
+    if r3 in respuestas:
+        break
+    else:
+        print ("Escoja una opción válida")  
+        
+while r4 not in respuestas2:    
+    print("Se considera una persona de"
+           "\n a) Derecha \n b) Centro-derecha \n c) Centro \n d) Centro-izquierda \n e) Izquierda \n f) Ninguna de las anteriores")
+    r4 = input()
+    if r4 in respuestas2 or r4 == "f":
+        break
+    else:
+        print ("Escoja una opción válida")
+        
+
+
