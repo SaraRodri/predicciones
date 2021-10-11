@@ -435,213 +435,213 @@ elif r1 == "c":
     if r2 == "a":
         if r3 == "a":
             if r4 == "a":
-                print ("Usted va a votar por ")
+                print ("Usted va a votar por Federico Gutiérrez")
             elif r4 == "b":
-                print ("Usted va a votar por por ")
+                print ("Usted va a votar por Federico Gutiérrez")
             elif r4 == "c":
-                print ("Usted va a votar por por ")
+                print ("Usted va a votar por Francia Márquez")
             elif r4 == "d":
-                print ("Usted va a votar por por ")
+                print ("Usted va a votar por Jorge Enrique Robledo")
             elif r4 == "e":
-                print ("Usted va a votar por ")
+                print ("Usted va a votar por Jorge Enrique Robledo")
             elif r4 == "f":
                 print ("Usted va a votar por el voto en blanco")
         elif r3 == "b":
             if r4 == "a":
-                print ("Usted va a votar por por ")
+                print ("Usted va a votar por Federico Gutiérrez")
             elif r4 == "b":
-                print ("Usted va a votar por por ")
+                print ("Usted va a votar porFederico Gutiérrez")
             elif r4 == "c":
-                print ("Usted va a votar2")
+                print ("Usted va a votar por Francia Marquez")
             elif r4 == "d":
-                print ("Usted va a votar3")
+                print ("Usted va a votar Francia Márquez")
             elif r4 == "e":
-                print ("Usted va a votar por ")
+                print ("Usted va a votar por Jorge Enrique Robledo")
             elif r4 == "f":
                 print ("Usted va a votar por el voto en blanco")
         elif r3 == "c":
             if r4 == "a":
-                print ("Usted va a votar")
+                print ("Usted va a votar por Maurico Cárdenas")
             elif r4 == "b":
-                print ("Usted va a votar1")
+                print ("Usted va a votar por Juan Manuel Galán")
             elif r4 == "c":
-                print ("Usted va a votar2")
+                print ("Usted va a votar por Francia Márquez")
             elif r4 == "d":
-                print ("Usted va a votar3")
+                print ("Usted va a votar por Jorge Enrique Robledo")
             elif r4 == "e":
-                print ("Usted va a votar por ")
+                print ("Usted va a votar por Jorge Enrique Robledo")
             elif r4 == "f":
                 print ("Usted va a votar por el voto en blanco")
         elif r3 == "d":
             if r4 == "a":
-                print ("Usted va a votar")
+                print ("Usted va a votar por Oscar Iván Zuluaga")
             elif r4 == "b":
-                print ("Usted va a votar1")
+                print ("Usted va a votar por Oscar Iván Zuluaga")
             elif r4 == "c":
-                print ("Usted va a votar2")
+                print ("Usted va a votar por Sergio Fajardo")
             elif r4 == "d":
-                print ("Usted va a votar3")
+                print ("Usted va a votar por Jorge Enrique Robledo)
             elif r4 == "e":
-                print ("Usted va a votar por ")
+                print ("Usted va a votar por Gustavo Petro")
             elif r4 == "f":
                 print ("Usted va a votar por el voto en blanco")
     elif r2 == "b":
         if r3 == "a":
             if r4 == "a":
-                print ("Usted va a votar")
+                print ("Usted va a votar por Mauricio Cárdenas")
             elif r4 == "b":
-                print ("Usted va a votar1")
+                print ("Usted va a votar por Federico Gutiérrez")
             elif r4 == "c":
-                print ("Usted va a votar2")
+                print ("Usted va a votar por Alejandro Gaviria")
             elif r4 == "d":
-                print ("Usted va a votar3")
+                print ("Usted va a votar por Jorge Enrique Robledo")
             elif r4 == "e":
-                print ("Usted va a votar por ")
+                print ("Usted va a votar por Jorge Enrique Robledo")
             elif r4 == "f":
                 print ("Usted va a votar por el voto en blanco")
         elif r3 == "b":
             if r4 == "a":
-                print ("Usted va a votar")
+                print ("Usted va a votar por Juan Manuel Galán")
             elif r4 == "b":
-                print ("Usted va a votar1")
+                print ("Usted va a votar por Alejandro Gaviria")
             elif r4 == "c":
-                print ("Usted va a votar2")
+                print ("Usted va a votar por Sergio Fajardo")
             elif r4 == "d":
-                print ("Usted va a votar3")
+                print ("Usted va a votar por Sergio Fajardo")
             elif r4 == "e":
-                print ("Usted va a votar por ")
+                print ("Usted va a votar por Jorge Enrique Robledo")
             elif r4 == "f":
                 print ("Usted va a votar por el voto en blanco")
         elif r3 == "c":
             if r4 == "a":
-                print ("Usted va a votar")
+                print ("Usted va a votar  por Dilian Francisca Toro")
             elif r4 == "b":
-                print ("Usted va a votar1")
+                print ("Usted va a votar por Dilian Francisca Toro")
             elif r4 == "c":
-                print ("Usted va a votar2")
+                print ("Usted va a votar por Alejandro Gaviria")
             elif r4 == "d":
-                print ("Usted va a votar3")
+                print ("Usted va a votar por Sergio Fajardo")
             elif r4 == "e":
-                print ("Usted va a votar por ")
+                print ("Usted va a votar por Jorge Enrique Robledo")
             elif r4 == "f":
                 print ("Usted va a votar por el voto en blanco")
         elif r3 == "d":
             if r4 == "a":
-                print ("Usted va a votar")
+                print ("Usted va a votar por Maurico Cárdenas")
             elif r4 == "b":
-                print ("Usted va a votar1")
+                print ("Usted va a votar por Juan Manuel Galán")
             elif r4 == "c":
-                print ("Usted va a votar2")
+                print ("Usted va a votar por Alejandro Gaviria")
             elif r4 == "d":
-                print ("Usted va a votar3")
+                print ("Usted va a votar por Jorge Enrique Robledo")
             elif r4 == "e":
-                print ("Usted va a votar por ")
+                print ("Usted va a votar por Gustavo Petro")
             elif r4 == "f":
                 print ("Usted va a votar por el voto en blanco")
     elif r2 == "c":
         if r3 == "a":
             if r4 == "a":
-                print ("Usted va a votar")
+                print ("Usted va a votar por Oscar Iván Zuluaga")
             elif r4 == "b":
-                print ("Usted va a votar1")
+                print ("Usted va a votar por Juan Manuel Galán")
             elif r4 == "c":
-                print ("Usted va a votar2")
+                print ("Usted va a votar por Alejandro Gaviria")
             elif r4 == "d":
-                print ("Usted va a votar3")
+                print ("Usted va a votar por Jorge Enrique Robledo")
             elif r4 == "e":
-                print ("Usted va a votar por ")
+                print ("Usted va a votar por Gustavo Petro")
             elif r4 == "f":
                 print ("Usted va a votar por el voto en blanco")
         elif r3 == "b":
             if r4 == "a":
-                print ("Usted va a votar")
+                print ("Usted va a votar por Dilian Francisca Toro")
             elif r4 == "b":
-                print ("Usted va a votar1")
+                print ("Usted va a votar por Alejandro Gaviria")
             elif r4 == "c":
-                print ("Usted va a votar2")
+                print ("Usted va a votar por Alejandro Gaviria")
             elif r4 == "d":
-                print ("Usted va a votar3")
+                print ("Usted va a votar por Jorge Enrique Robledo")
             elif r4 == "e":
-                print ("Usted va a votar por ")
+                print ("Usted va a votar por Jorge Enrique Robledo")
             elif r4 == "f":
                 print ("Usted va a votar por el voto en blanco")
         elif r3 == "c":
             if r4 == "a":
-                print ("Usted va a votar")
+                print ("Usted va a votar por Mauricio Cárdenas")
             elif r4 == "b":
-                print ("Usted va a votar1")
+                print ("Usted va a votar por Juan Manuel Galán")
             elif r4 == "c":
-                print ("Usted va a votar2")
+                print ("Usted va a votar Alejandro Gavira")
             elif r4 == "d":
-                print ("Usted va a votar3")
+                print ("Usted va a votar por Jorge Enrique Robledo")
             elif r4 == "e":
-                print ("Usted va a votar por ")
+                print ("Usted va a votar por Jorge Enrique Robledo")
             elif r4 == "f":
                 print ("Usted va a votar por el voto en blanco")
         elif r3 == "d":
             if r4 == "a":
-                print ("Usted va a votar")
+                print ("Usted va a votar por Mauricio Cárdenas")
             elif r4 == "b":
-                print ("Usted va a votar1")
+                print ("Usted va a votar por Mauricio Cárdenas")
             elif r4 == "c":
-                print ("Usted va a votar2")
+                print ("Usted va a votar por Alejandro Gaviria")
             elif r4 == "d":
-                print ("Usted va a votar3")
+                print ("Usted va a votar por Sergio Fajardo")
             elif r4 == "e":
-                print ("Usted va a votar por ")
+                print ("Usted va a votar por Gustavo petro")
             elif r4 == "f":
                 print ("Usted va a votar por el voto en blanco")
     elif r2 == "d":
         if r3 == "a":
             if r4 == "a":
-                print ("Usted va a votar")
+                print ("Usted va a votar por Dilian Francisca Toro")
             elif r4 == "b":
-                print ("Usted va a votar1")
+                print ("Usted va a votar por Juan Manuel Galán")
             elif r4 == "c":
-                print ("Usted va a votar2")
+                print ("Usted va a votar por Sergio Fajardo")
             elif r4 == "d":
-                print ("Usted va a votar3")
+                print ("Usted va a votar por Sergio Fajardo")
             elif r4 == "e":
-                print ("Usted va a votar por ")
+                print ("Usted va a votar por Jorge ENrique Robledo")
             elif r4 == "f":
                 print ("Usted va a votar por el voto en blanco")
         elif r3 == "b":
             if r4 == "a":
-                print ("Usted va a votar")
+                print ("Usted va a votar por Federico Gutiérrez")
             elif r4 == "b":
-                print ("Usted va a votar1")
+                print ("Usted va a votar por Alejandro Gaviria")
             elif r4 == "c":
-                print ("Usted va a votar2")
+                print ("Usted va a votar por Sergio Fajardo")
             elif r4 == "d":
-                print ("Usted va a votar3")
+                print ("Usted va a votar por Sergio Fajardo")
             elif r4 == "e":
-                print ("Usted va a votar por ")
+                print ("Usted va a votar por Francia Márquez")
             elif r4 == "f":
                 print ("Usted va a votar por el voto en blanco")
         elif r3 == "c":
             if r4 == "a":
-                print ("Usted va a votar")
+                print ("Usted va a votar por Federico Gutiérrez")
             elif r4 == "b":
-                print ("Usted va a votar1")
+                print ("Usted va a votar por Juan Manuel Galán")
             elif r4 == "c":
-                print ("Usted va a votar2")
+                print ("Usted va a votar por Juan Manuel Galán")
             elif r4 == "d":
-                print ("Usted va a votar3")
+                print ("Usted va a votar Francia Márquez")
             elif r4 == "e":
-                print ("Usted va a votar por ")
+                print ("Usted va a votar por Francia Márquez")
             elif r4 == "f":
                 print ("Usted va a votar por el voto en blanco")
         elif r3 == "d":
             if r4 == "a":
-                print ("Usted va a votar")
+                print ("Usted va a votar por Oscar Iván Zuluaga")
             elif r4 == "b":
-                print ("Usted va a votar1")
+                print ("Usted va a votar por Alejandro Gaviria")
             elif r4 == "c":
-                print ("Usted va a votar2")
+                print ("Usted va a votar por Alejandro Gaviria")
             elif r4 == "d":
-                print ("Usted va a votar3")
+                print ("Usted va a votar por Sergio Fajardo")
             elif r4 == "e":
-                print ("Usted va a votar por ")
+                print ("Usted va a votar por Gustavo PETRO")
             elif r4 == "f":
                 print ("Usted va a votar por el voto en blanco")
 elif r1 == "d":
