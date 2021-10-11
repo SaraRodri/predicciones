@@ -435,7 +435,7 @@ elif r1 == "c":
     if r2 == "a":
         if r3 == "a":
             if r4 == "a":
-                print ("Usted va a votar por por ")
+                print ("Usted va a votar por ")
             elif r4 == "b":
                 print ("Usted va a votar por por ")
             elif r4 == "c":
