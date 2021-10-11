@@ -421,7 +421,7 @@ elif r1 == "b":
         elif r3 == "d":
             if r4 == "a":
                 print ("Usted va a votar por  Óscar Iván Zuluaga")
-            elif r4 == "b"
+            elif r4 == "b":
                 print ("Usted va a votar por Óscar Iván Zuluaga")
             elif r4 == "c":
                 print ("Usted va a votar por Alejandro Gaviria")
@@ -480,7 +480,7 @@ elif r1 == "c":
             elif r4 == "c":
                 print ("Usted va a votar por Sergio Fajardo")
             elif r4 == "d":
-                print ("Usted va a votar por Jorge Enrique Robledo)
+                print ("Usted va a votar por Jorge Enrique Robledo")
             elif r4 == "e":
                 print ("Usted va a votar por Gustavo Petro")
             elif r4 == "f":
