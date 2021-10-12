@@ -1,0 +1,52 @@
+import tkinter
+
+#--------------crear la raíz----------------
+
+raiz = tkinter.Tk()
+raiz.title("Pregunta 2")
+raiz.config(bg="light pink")
+raiz.geometry("1000x500")
+
+#-----------------crear el frame-------------
+
+frame1 = tkinter.Frame(raiz, width=1000, height=500, bg="light blue")
+frame1.pack()
+
+#--------------- Labels y Entrys que tiene la raíz-------
+
+pregunta = tkinter.Label(frame1, text= "Su candidato preferido debe enfocarse en\n"
+                         "\n a) El medio ambiente \n b) La seguridad \n"
+" c) La reactivación económica \n d) La eliminación de la corrupción", 
+                      font = ("Times New Roman", 14))
+pregunta.grid(padx=100, pady=20)
+
+respuesta2 = tkinter.Entry(frame1)
+respuesta2.config(justify="center")
+respuesta2.grid(padx = 200, pady= 10) 
+
+def siguiente():
+    "Verifica si la opción introducida en el entry es válida"
+    global r2
+    r2 = respuesta2.get()
+    if r2 =="a" or r2=="b" or r2 =="c" or r2=="d":
+        abrir_ventana2() #si la respuesta es válida, ejecuta abrir_ventana2()
+    else:
+        message = tkinter.Label(frame1, text= "Por favor, escoja una opción válida", 
+                      font = ("Times New Roman", 14))
+        message.grid(padx = 20, pady= 10)
+        
+def abrir_ventana2():
+    "Crea una segunda ventana en donde abre pregunta 3"
+    import pregunta3 #importa el módulo donde se encuentra la siguiente pregunta
+    raiz.withdraw()
+    pregunta3.open() #abre el módulo de la siguiente pregunta
+    
+def cerrar_ventana():
+    """Cierra la ventana anterior para que el usuario no tenga dos
+    ventanas al mismo tiempo"""
+    raiz.destroy()
+
+boton= tkinter.Button(frame1, text="Siguiente", command=siguiente)
+boton.grid(padx = 20, pady= 10)
+
+raiz.mainloop()
