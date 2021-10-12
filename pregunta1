@@ -1,0 +1,50 @@
+import tkinter
+
+#--------------crear la raíz----------------
+
+raiz = tkinter.Tk()
+raiz.title("Pregunta 1")
+raiz.config(bg="light pink")
+raiz.geometry("1000x500")
+
+#-----------------crear el frame-------------
+frame1 = tkinter.Frame(raiz, width=1000, height=500, bg="light blue")
+frame1.pack()
+
+#--------------- Labels y Entrys que tiene la raíz-------
+pregunta = tkinter.Label(frame1, text= "¿Usted va a votar en estas elecciones?\n"
+                                     "\n a) Sí \n b) No \n c) No lo sé aun", 
+                      font = ("Times New Roman", 14))
+pregunta.grid(padx=100, pady=20)
+
+respuesta1 = tkinter.Entry(frame1)
+respuesta1.config(justify="center")
+respuesta1.grid(padx = 200, pady= 10) 
+
+def siguiente():
+    "Verifica si la opción introducida en el entry es válida"
+    global r1 
+    r1 = respuesta1.get()
+    if r1 =="a" or r1 =="b" or r1 =="c":
+        abrir_ventana2() #si la respuesta es válida, abre una nueva ventana
+    else:
+        message = tkinter.Label(frame1, text= "Por favor, escoja una opción válida", 
+                      font = ("Times New Roman", 14))
+        message.grid(padx = 20, pady= 10)
+        
+def abrir_ventana2():
+    "Crea una segunda ventana en donde abre pregunta2"
+    import pregunta2
+    raiz.withdraw()
+    pregunta2.open()
+    
+def cerrar_ventana():
+    """Cierra la ventana anterior para que el usuario no tenga dos
+    ventanas al mismo tiempo"""
+    raiz.destroy()
+    
+boton = tkinter.Button(frame1, text="Siguiente", command=siguiente) #crea un botón que ejecuta siguiente 
+boton.grid(padx = 20, pady= 10)
+
+
+raiz.mainloop()
