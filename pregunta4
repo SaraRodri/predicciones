@@ -1,0 +1,989 @@
+import tkinter
+
+#-------------La raíz y sus características---------
+raiz = tkinter.Tk()
+raiz.title("Pregunta 4")
+raiz.config(bg="light pink")
+raiz.geometry("1000x500")
+
+#----------el frame----------------
+frame1 = tkinter.Frame(raiz, width=1000, height=500, bg="light blue")
+frame1.pack()
+
+#---------la pregunta y sus características-----------
+pregunta = tkinter.Label(frame1, text= "Se considera una persona de\n"
+           "\n a) Derecha \n b) Centro-derecha \n c) Centro \n d) Centro-izquierda"
+           " \n e) Izquierda \n f) Ninguna de las anteriores", 
+                      font = ("Times New Roman", 14))
+pregunta.grid(padx=100, pady=20)
+
+#------------la respuesta y sus características---------------
+respuesta4 = tkinter.Entry(frame1)
+respuesta4.config(justify="center")
+respuesta4.grid(padx = 200, pady= 10) 
+
+def siguiente():
+    "Define si la respuesta introducida es válida"
+    global r4
+    r4 = respuesta4.get()
+    if r4 =="a" or r4=="b" or r4 =="c" or r4=="d" or r4=="e" or r4=="f":
+        abrirventana2()
+    else:
+        message = tkinter.Label(frame1, text= "Por favor, escoja una opción válida", 
+                      font = ("Times New Roman", 14))
+        message.grid(padx = 20, pady= 10)
+    
+def abrirventana2():
+    "abre una nueva ventana e implementa el árbol de decisiones, dando un posible candidato"
+    win = tkinter.Toplevel()
+    win.geometry("500x500")
+    win.config(bg="light pink")
+    win.title("Resultado")
+    #r1 = respuesta1.get()
+    #r2 = respuesta2.get()
+    #r3 = respuesta3.get()
+    #r4 = respuesta4.get()
+    r4 = respuesta4.get()
+    r1 = "a" #valores de prueba
+    r2 = "a" #valores de prueba
+    r3 = "a" #valores de prueba
+    
+    
+    if r1 == "a":
+        if r2 == "a":
+            if r3 == "a":
+                if r4 == "a": 
+                    e3 = tkinter.Label(win, text="Usted va a votar por Federico Gutierrez", 
+                                       bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Francia Márquez",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Francia Márquez",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "b":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Federico Gutierrez",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Federico Gutierrez",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Francia Márquez",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Francia Márquez",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "c":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Mauricio Cárdenas",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Francia Márquez",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "d":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Óscar Iván Zuluaga",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Óscar Iván Zuluaga",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Gustavo Petro",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+        elif r2 == "b":
+            if r3 == "a":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Mauricio Cárdenas",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Federico Gutierrez",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "b":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "c":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Dilian Francisca Toro",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Dilian Francisca Toro",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "d":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Mauricio Cárdenas",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Gustavo Petro",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+        elif r2 == "c":
+            if r3 == "a":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Óscar Iván Zuluaga",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Gustavo Petro",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "b":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Dilian Francisca Toro",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "c":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Mauricio Cárdenas",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "d":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Mauricio Cárdenas",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Mauricio Cárdenas",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Gustavo Petro",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+        elif r2 == "d":
+            if r3 == "a":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Dilian Francisca Toro",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "b":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Federico Gutierrez",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Francia Márquez",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "c":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Federico Gutierrez",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Francia Márquez",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Francia Márquez",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "d":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Óscar Iván Zuluaga",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Gustavo Petro",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+    elif r1 == "b":
+        if r2 == "a":
+            if r3 == "a":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Federico Gutierrez", 
+                                       bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Federico Gutierrez", 
+                                       bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Francia Márquez",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "b":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Federico Gutierrez", 
+                                       bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Federico Gutierrez", 
+                                       bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Francia Márquez",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Francia Márquez",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "c":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Mauricio Cárdenas",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Francia Márquez",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "d":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Óscar Iván Zuluaga",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Óscar Iván Zuluaga",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Gustavo Petro",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                   e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+        elif r2 == "b":
+            if r3 == "a":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Federico Gutierrez", 
+                                       bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "b":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "c":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Dilian Francisca Toro",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                   e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "d":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Gustavo Petro",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+        elif r2 == "c":
+            if r3 == "a":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Óscar Iván Zuluaga",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Gustavo Petro",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "b":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "c":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Mauricio Cárdenas",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "d":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Gustavo Petro",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+        elif r2 == "d":
+            if r3 == "a":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "b":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Federico Gutierrez", 
+                                       bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "c":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Francia Márquez",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 ==  "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Francia Márquez",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "d":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Óscar Iván Zuluaga",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Óscar Iván Zuluaga",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Gustavo Petro",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+    elif r1 == "c":
+        if r2 == "a":
+            if r3 == "a":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Federico Gutierrez", 
+                                       bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Federico Gutierrez", 
+                                       bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Francia Márquez",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "b":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Federico Gutierrez", 
+                                       bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Federico Gutierrez", 
+                                       bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Francia Márquez",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Francia Márquez",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "c":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Mauricio Cárdenas",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Francia Márquez",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "d":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Óscar Iván Zuluaga",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Óscar Iván Zuluaga",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Gustavo Petro",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+        elif r2 == "b":
+            if r3 == "a":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Mauricio Cárdenas",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Federico Gutierrez", 
+                                       bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "b":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "c":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Dilian Francisca Toro",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Dilian Francisca Toro",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "d":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Mauricio Cárdenas",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Gustavo Petro",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+        elif r2 == "c":
+            if r3 == "a":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Óscar Iván Zuluaga",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Gustavo Petro",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "b":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Dilian Francisca Toro",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "c":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Mauricio Cárdenas",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "d":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Mauricio Cárdenas",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Mauricio Cárdenas",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Gustavo Petro",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+        elif r2 == "d":
+            if r3 == "a":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Dilian Francisca Toro",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Jorge Enrique Robledo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "b":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Federico Gutierrez", 
+                                       bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Francia Márquez",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "c":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Federico Gutierrez", 
+                                       bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Juan Manuel Galán",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Francia Márquez",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Francia Márquez",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+            elif r3 == "d":
+                if r4 == "a":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Óscar Iván Zuluaga",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "b":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "c":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Alejandro Gaviria",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "d":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Sergio Fajardo",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "e":
+                    e3 = tkinter.Label(win, text="Usted va a votar por Gustavo Petro",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                elif r4 == "f":
+                    e3 = tkinter.Label(win, text="Usted va a votar por el voto en blanco",
+                                    bg="light blue", fg="black", font=("Times New Roman", 14))
+                    
+    e3.pack(padx=100, pady=100, ipadx=100, ipady=100, fill=tkinter.X)
+    boton2= tkinter.Button(win, text="ok", command=win.destroy)
+    boton2.pack()
+    
+def cerrarventana():
+    raiz.destroy()
+
+boton= tkinter.Button(frame1, text="Siguiente", command=siguiente)
+boton.grid(padx = 20, pady= 10)
+
+raiz.mainloop()
