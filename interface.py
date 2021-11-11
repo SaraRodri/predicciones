@@ -18,12 +18,12 @@ class Bienvenida():
         bienvenida = tkinter.Label(self.frame1, text= "¡Sea usted bienvenida(o)! \n"
                               "El propósito de esta encuesta es generar una predicción de su voto en las "
                               "elecciones a la presidencia \n del próximo año, 2022. A partir de sus respuestas, "
-                              "se generará un perfil político suyo, y con base en este se \n escogerá un posible candidato "
+                              "se generará su perfil político, y con base en este se \n escogerá un posible candidato "
                               "por el cual usted votaría. \n Los candidatos tomados en cuenta para esta encuesta fueron:"
                               "\n Alejandro Gaviria, Gustavo Petro, Mauricio Cárdenas, Sergio Fajardo, \n Federico Gutierrez, Óscar Iván"
                               " Zuluaga, Francia Márquez, Juan Manuel Galán,\n Jorge Enrique Robledo y Dilian Francisca Toro. \n"
                               "\n En la encuesta, se presentarán una serie de preguntas con diferentes opciones, por favor escriba en su teclado la \n opción que prefiera y "
-                              "luego de 'click' en el botón 'Siguiente' (Recuerde solo usar minúsculas) \n "
+                              "luego de 'click' en el botón 'Siguiente'. \n  Recuerde solo usar minúsculas y, en la última diapositiva, oprimir el botón 'OK' \n "
                               "\n Esperamos que sea de su agrado la encuesta, y recuerde, esto solo es una \n"
                               "especulación respecto a una lista reducida de candidatos. \n ¡Gracias!", 
                               font = ("Times New Roman", 14))
