@@ -75,7 +75,7 @@ class Pregunta:
 def arbol (r1, r2, r3, r4):
     "Basándose en sus respuestas, predice por quién votará el encuestado"
     win = tkinter.Tk() #crea la raíz
-    win.geometry("500x500")
+    win.geometry("600x600")
     win.config(bg="light pink")
     win.title("Resultado")
     
