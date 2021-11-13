@@ -1,0 +1,14 @@
+ 
+c  c  c  e  Usted va a votar por Jorge Enrique Robledo 
+a  d  d  e  Usted va a votar por Gustavo Petro 
+a  b  a  d  Usted va a votar por Jorge Enrique Robledo 
+a  a  b  e  Usted va a votar por Francia Márquez 
+b  c  d  a  Usted va a votar por Juan Manuel Galán 
+b  d  c  d  Usted va a votar por Francia Márquez 
+c  d  d  a  Usted va a votar por Óscar Iván Zuluaga  
+c  b  c  a  Usted va a votar por Dilian Francisca Toro  
+c  b  a  a  Usted va a votar por Mauricio Cárdenas  
+a  a  a  a  Usted va a votar por Federico Gutierrez  
+a  a  c  c  Usted va a votar por Alejandro Gaviria  
+a  a  b  c  Usted va a votar por Sergio Fajardo  
+a  d  c  f  Usted va a votar por el voto en blanco  
