@@ -749,7 +749,7 @@ f = open("resultado.txt", 'a') #escribe en un archivo de texto los resultados de
 lista = [pregunta1.r, pregunta2.r, pregunta3.r, pregunta4.r, variable]
 f.write("\n")
 for i in lista:
-    f.write(i + " ")      
+    f.write(i + "  ")      
 f.close()       
         
         
